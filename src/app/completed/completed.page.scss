@@ -1,0 +1,69 @@
+ion-content{
+    --background: var(--ion-color-background);
+}
+
+ion-toolbar{
+    --background: var(--ion-color-background);
+    color: var(--ion-color-red);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+
+  ion-item{
+    // padding-right: 16px;
+    // --background: var(--ion-color-background);
+    color: var(--ion-color-background);
+}
+
+ion-list.background{
+    background-color: var(--ion-color-background);
+  }
+
+ion-label{
+    color: var(--ion-color-red);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+ion-card-title{
+    color: var(--ion-color-red);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.workouts{
+    font-size: 20px ;
+    padding-left: 20px;
+    color: var(--ion-color-background);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.workout{
+    font-size: 22px ;
+    color: var(--ion-color-red);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.notes{
+    padding-left: 20px;
+}
+
+.day-title{
+    color: var(--ion-color-background);
+    font-size: 60px ;
+}
+
+.close{
+    --background: red;
+}
+
+.day-title{
+    color: var(--ion-color-background);
+    font-size: 60px ;
+}
+
+.completed{
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    margin-top: -150px;
+}
+
+.bottom-content{
+    padding-bottom: 60px;
+}

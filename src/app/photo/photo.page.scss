@@ -1,0 +1,77 @@
+ion-content{
+    --background: var(--ion-color-background);
+}
+.back{
+    color: red;
+  }
+  
+.cam{
+    --background: red;
+}
+
+ion-toolbar{
+    --background: var(--ion-color-background);
+}
+
+ion-title{
+    color: var(--ion-color-red);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 18px;
+}
+
+ion-label{
+    color: red;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+
+.photo-background{
+    --background: var(--ion-color-background);
+    margin-right: -1px;
+    margin-left: -5px;
+    margin-top: -1px;
+}
+
+
+ion-card{
+    --ion-background-color: transparent; 
+    box-shadow:none;
+}
+
+
+
+ion-image{
+
+    position: absolute;
+    width:100%;
+}
+
+ion-label{
+    color: white;
+}
+
+#gridview { 
+    text-align:center; 
+}
+div.image {
+    display: inline-block;
+} 
+div.image img {
+    width: 30%;
+    height: auto;
+    border: 1px solid #ccc;
+}
+div.image img:hover {
+    box-shadow: 0 5px 5px 0 rgba(0,0,0,0.32), 0 0 0 0px rgba(0,0,0,0.16);
+}
+
+.photo-background{
+    background: var(--ion-color-background);
+}
+
+.buttonRow{
+    --background: var(--ion-color-red);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 15px;
+  }

@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      GYMS NEAR YOU
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content [fullscreen]="true">
+
+    <div #map id='map'></div>
+
+</ion-content>
+
+<ion-fab vertical="bottom" horizontal="center" slot="fixed">
+  <ion-fab-button class="close" (click)="backMain()">
+    <ion-icon name="close"></ion-icon>
+  </ion-fab-button>
+</ion-fab>
+
+

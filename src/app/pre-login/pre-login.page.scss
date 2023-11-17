@@ -1,0 +1,45 @@
+ion-content{
+    --background: var(--ion-color-background);
+}
+
+ion-header{
+    position: absolute
+}
+
+ion-toolbar{
+    --ion-background-color: transparent; 
+    --opacity: 0;
+}
+.sign-in-btns{
+    margin-top: 25px;
+    text-align: center; 
+}
+.login{
+    font-size:15px;
+    --background: red;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.create{
+    color: red;
+    font-size:15px;
+    --border-color: red;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+ion-card{
+    --ion-background-color: transparent; 
+    box-shadow:none;
+}
+
+ion-card-title{
+    font-size:50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: red;
+    text-align: center;
+}
+
+ion-card-subtitle{
+    text-align: center;
+    color: white;
+}

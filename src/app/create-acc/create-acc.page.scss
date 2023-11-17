@@ -1,0 +1,71 @@
+ion-content{
+    --background: var(--ion-color-red);
+}
+
+ion-header{
+    position: absolute
+}
+
+ion-toolbar{
+    --ion-background-color: transparent; 
+    --opacity: 0;
+}
+.sign-in-btns{
+    margin-top: 25px;
+    text-align: center; 
+}
+.login{
+    font-size:15px;
+    --background: var(--ion-color-background);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.pwdInput{
+    padding-bottom: 40px;
+}
+.create{
+    color: var(--ion-color-background);
+    font-size:15px;
+    --border-color: var(--ion-color-background);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+ion-icon{
+    padding-right:10px;
+}
+
+.signUpLink{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    --background: transparent;
+    padding-left: 10px;
+}
+
+.signUp{
+    text-align: center; 
+    padding-left: 5px;
+    color: var(--ion-color-background);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+ion-icon{
+    color: var(--ion-color-background);
+}
+
+
+
+ion-card{
+    --ion-background-color: transparent; 
+    box-shadow:none;
+}
+
+ion-card-title{
+    font-size:30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: var(--ion-color-background);
+    text-align: center;
+}
+
+ion-card-subtitle{
+    text-align: center;
+    color: white;
+}

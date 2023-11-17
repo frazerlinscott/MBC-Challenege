@@ -1,0 +1,56 @@
+ion-content{
+    --background: var(--ion-color-background);
+  }
+
+
+ion-toolbar{
+    --background: var(--ion-color-background);
+    color: var(--ion-color-red);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+
+ion-label{
+  color: red;
+}
+
+.buttonRow{
+  --background: var(--ion-color-red);
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 15px;
+}
+
+.icon{
+  padding-left: 10px;
+}
+
+#textContainer {
+  text-align: center;
+  color: var(--ion-color-red); 
+  margin-bottom: -10px;
+}
+
+h1{
+  font-size: 60px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+h2{
+  font-size: 15px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  padding-top: -50px;
+}
+
+h3{
+  font-size: 30px;
+  color: white;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow', sans-serif;
+  padding-top: -50px;
+}
+
+.dark{
+  margin-top: 20px;
+  color: var(--ion-color-background);
+  font-family: Impact, Haettenschweiler, 'Arial Narrow', sans-serif;
+}
+
+

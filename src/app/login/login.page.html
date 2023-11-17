@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button color="red" ></ion-back-button>
+    </ion-buttons>
+    <!-- <ion-title>
+      Login 
+    </ion-title> -->
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content [fullscreen]="true">
+
+  <ion-card class="ion-no-margin">
+    <ion-img src="assets/imgs/loginHeaderLogin.png"></ion-img>
+    <ion-card-header>
+      <ion-card-title>
+        Login
+      </ion-card-title>
+      <!-- <ion-card-subtitle>
+        Placeholder -instructions 
+      </ion-card-subtitle> -->
+    </ion-card-header>
+    <ion-card-content>
+      <div class="sign-in-btns">
+        <p class="incorrect" *ngIf="incorrectDisplay">INCORRECT PASSWORD</p>
+        <ion-item ><ion-icon name="person-circle-outline"></ion-icon><ion-input [(ngModel)]="username" placeholder="Username"></ion-input></ion-item>
+        <ion-item class="pwdInput"><ion-icon name="lock-closed-outline"></ion-icon><ion-input [(ngModel)]="password" placeholder="**********"></ion-input></ion-item>
+        <ion-button fill="solid" shape="round" class="login" (click)="login()">Login</ion-button>
+        <!-- <ion-button fill="outline" shape="round" class="create">Sign Up</ion-button> -->
+      </div>
+
+    </ion-card-content>
+  </ion-card>
+
+  <div>
+    <p class="signUp">Dont have an account?<a slot="center" class="signUpLink" (click) = "signInPage()">SIGN UP</a></p></div>
+    <div>
+
+
+
+<!-- <div id="container">
+  <ion-list class="background">
+
+      <ion-button (click)="createLogin()" shape="round">Create</ion-button>
+
+      <ion-button (click)="login()" shape="round">Login</ion-button>
+
+</ion-list> -->

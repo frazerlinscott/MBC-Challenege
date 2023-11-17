@@ -1,0 +1,108 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button color="red"></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      PROGRESS
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div id="textContainer"> 
+  <h3> WORKOUT BREAKDOWN</h3> 
+  <h2> This is a breakdown of your workout accomplishments so far! </h2>
+  </div>
+
+<!-- <div><ion-img src="./chart.png"></ion-img></div>
+<div><ion-label>
+  Chart Showing Workout Data Breakdown </ion-label></div>
+<div><ion-img src="./chart.png"></ion-img></div>
+<div><ion-label>
+  Chart Showing Sleep Data Breakdown</ion-label></div>
+<div><ion-img src="./chart.png"></ion-img></div>
+<div><ion-label>
+  Chart Showing Weight Data Breakdown</ion-label></div> -->
+
+
+<ion-card-content>
+    <canvas #workoutCanvas height=300></canvas>
+</ion-card-content>
+
+<div class="buttonRow">
+  <ion-row wrap>
+    <ion-col width-50>
+      <ion-button (click)="pieChartType()" shape="round" class="buttonRow" expand="full" >Pie Chart<ion-icon name="pie"></ion-icon></ion-button>
+    </ion-col>
+    <ion-col width-50>
+      <ion-button (click)="barChartType()" shape="round" class="buttonRow" expand="full">Bar Chart<ion-icon name="stats"></ion-icon></ion-button>
+    </ion-col>
+  </ion-row>
+</div>
+
+<div id="textContainer"> 
+  <h3> WEIGHT</h3> 
+  <h2> This chart is tracking your weight fluctuation each day. Keep in mind you started the challenge weighing: </h2>
+  <h3> {{initWeight}}kg</h3> 
+</div>
+  
+
+<ion-card-content>
+  <canvas #weightCanvas height=300></canvas>
+</ion-card-content>
+
+<div id="textContainer"> 
+  <h3> SLEEP </h3> 
+  <h2> It is extremely important to get at least 8 hours sleep while participating in the challenge. Your average sleep time is: </h2>
+  <h3> {{averSleep | number:'1.2-2'}} hours/night</h3> 
+</div> 
+
+<ion-card-content>
+  <canvas #sleepCanvas height=300></canvas>
+</ion-card-content>
+
+
+<ion-list>
+  <div id="textContainer"> 
+    <h3 class="dark"> WATER </h3> 
+    <h2> While doing 2 workouts a day, it is espeically important to drinking at least 4Litres of water a day. So far you have drunk: </h2>
+    <h3 class="dark"> {{waterIntake}} Litres of Water</h3> 
+  </div>
+</ion-list>
+
+
+<div id="textContainer"> 
+  <h3> READING </h3> 
+  <h2> Scheduling time to read will exercise your discipline and improve your self-development progress. So far you have read:  </h2>
+  <h3> {{readingCount}} Pages </h3> 
+</div>
+
+
+  
+
+
+
+
+
+
+<!-- -
+TO DO TODAY 
+- Style editworkout page
+- checkboxes 
+- Passing data to progress page
+- progress place holders (show data) -->
+
+
+
+
+
+
+
+<!-- -
+TO DO TODAY 
+- Style editworkout page
+- checkboxes 
+- Passing data to progress page
+- progress place holders (show data) --> -->

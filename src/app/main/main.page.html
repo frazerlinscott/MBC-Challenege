@@ -1,0 +1,76 @@
+
+
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons class="signOut" (click)="signOut()" slot="start"> Sign Out
+      <!-- <ion-back-button color="red" > Sign Out </ion-back-button> -->
+    </ion-buttons>
+    <ion-buttons class="about" [routerLink]="['/about']" slot="end"> About
+      <!-- <ion-back-button color="red" > Sign Out </ion-back-button> -->
+    </ion-buttons>
+    <ion-title class="name" >
+      {{firstname}}
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+
+<ion-content>
+
+  <div id="container"> 
+  <h1 >DAY {{numDay}} </h1>
+  </div>
+
+    <ion-list class="background">
+      <ion-item>
+        <ion-button [routerLink]="['/map']" shape="round" class="maps-btn" expand="full" >FIND A GYM<ion-icon class="icon" name="map-outline"></ion-icon></ion-button>
+      </ion-item>
+      <ion-item>
+        <ion-label class="checklist-label">Workout 1</ion-label>
+        <ion-select (click)="loadSelection()" [(ngModel)] = "workoutOneSelected">
+          <ion-select-option *ngFor = "let w of WorkoutOptions" value={{w.name}}>{{w.name}}</ion-select-option>
+        </ion-select>
+        <a class="editLink" (click)="presentModal1(1)">Edit</a>
+    </ion-item>
+
+    <ion-item>
+        <ion-label class="checklist-label">Workout 2</ion-label>
+        <ion-select (click)="loadSelection()" [(ngModel)] = "workoutTwoSelected">
+          <ion-select-option *ngFor = "let o of WorkoutOptions" value= {{o.name}} >{{o.name}}</ion-select-option>
+                   <!-- if workout options are empty - alert to say add workouts  -->
+        </ion-select>
+        <a class="editLink" (click)="presentModal1(2)">Edit</a>
+    </ion-item>
+    <div><ion-item><ion-input class="checklist-label" type="number" min="0" inputmode="numeric" pattern="[0-9]*" ng-model="vm.onlyNumbers" [(ngModel)] = "daySleep" placeholder="Sleep"></ion-input></ion-item></div>
+    <div><ion-item><ion-input class="checklist-label" type="number" min="0" inputmode="numeric" pattern="[0-9]*" ng-model="vm.onlyNumbers" [(ngModel)] = "dayWeight"placeholder="Weight"></ion-input></ion-item></div>
+    <div> <ion-item class="checklist-label" (click)="ImagePage()">Upload Progress Picture<ion-icon slot="end" name="camera"></ion-icon></ion-item> </div>
+  
+
+
+    <div> <ion-item><ion-checkbox   size="small" [(ngModel)]="ReadingisChecked" (click)="checkChecked($event, 'reading')"></ion-checkbox>10 Pages of Reading</ion-item> </div>
+    <div> <ion-item><ion-checkbox   size="small"[(ngModel)]="DrinkingisChecked" (click)="checkChecked($event, 'water')"></ion-checkbox>Drink 4L of Water</ion-item> </div>
+    <div> <ion-item><ion-checkbox   size="small" [(ngModel)]="EatingisChecked" (click)="checkChecked($event, 'food')"></ion-checkbox>No Cheat Meals or Alcohol</ion-item> </div>
+
+  </ion-list>
+
+  <div id="bottomContainer"> 
+    <h2> DAYS REMAINING: </h2>
+  <h3> {{duration}}</h3> 
+  <h2> FINISHING: {{ endDate | date: 'dd MMMM yyyy' }} </h2>
+  </div>
+
+</ion-content>
+
+<ion-footer>
+  <div class="buttonRow">
+    <ion-row wrap>
+      <ion-col width-50>
+        <ion-button (click)="progressBtnClick()" shape="round" class="buttonRow" expand="full" >PROGRESS<ion-icon class="icon" name="document-outline"></ion-icon></ion-button>
+      </ion-col>
+      <ion-col width-50>
+        <ion-button *ngIf="completeBtnShown" (click)="completeBtnClick()"shape="round" class="buttonRow" expand="full">COMPLETE<ion-icon class="icon" name="checkbox-outline"></ion-icon></ion-button>
+      </ion-col>
+    </ion-row>
+  </div>
+</ion-footer>

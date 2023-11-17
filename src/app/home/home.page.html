@@ -1,0 +1,51 @@
+<ion-header collapse="condense" class="ion-padding-top">
+  <ion-toolbar>
+    <ion-title size="large">Welcome</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+<div id="container">
+  <ion-list class="background">
+
+  
+      <ion-item ><ion-input [(ngModel)]="firstname" placeholder="First Name"></ion-input></ion-item>
+      <ion-item ><ion-input [(ngModel)]="lastname" placeholder="Second Name"></ion-input></ion-item>
+      <ion-item ><ion-input [(ngModel)]="weight" placeholder="Current Weight"></ion-input></ion-item>
+
+      <ion-row wrap>
+        <ion-col width-50>
+          <ion-button (click)="showDateInput()" shape="round" class="buttonRow" expand="full" >Choose Duration<ion-icon class="icon" name="time-outline"></ion-icon></ion-button>
+        </ion-col>
+        <ion-col width-50>
+          <ion-button (click)="showDatePicker()" shape="round" class="buttonRow" expand="full">Pick Finishing Date <ion-icon class="icon" name="calendar-outline"></ion-icon></ion-button>
+        </ion-col>
+      </ion-row>
+
+      <ion-item [hidden]=inputIsHidden >
+        <ion-input type="number" min="0" inputmode="numeric" pattern="[0-9]*" [(ngModel)]="duration" placeholder="Number of Days"></ion-input>
+        </ion-item>
+
+        <!-- TODO - CHANGE WEIGHT AND DURTION TO KEYPAD INPUT && DISPLAY FINISHING DATE ON BOTH HOME AND MAIN PAGES  -->
+
+        <ion-item [hidden]=pickerIsHidden>
+          <ion-label>Finishing Date</ion-label>
+          <ion-input
+            value="{{ date | date: 'dd.MM.yyyy' }}"
+            id="date"
+            class="ion-text-end"></ion-input>
+              <ion-datetime presentation="date" [(ngModel)]="date"></ion-datetime>
+        </ion-item>
+
+
+
+    <div>
+      <ion-button (click)="btnClicked()" shape="round">DONE</ion-button>
+    </div>
+  
+  </ion-list>
+
+
+
+

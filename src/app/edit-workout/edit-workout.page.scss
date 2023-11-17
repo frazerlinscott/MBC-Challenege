@@ -1,0 +1,22 @@
+ion-content{
+    --background: var(--ion-color-background);
+}
+
+ion-toolbar{
+    --background: var(--ion-color-background);
+    color: var(--ion-color-red);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  ion-item{
+    padding-right: 16px;
+    --background: var(--ion-color-background);
+    color: var(--ion-color-red);
+}
+
+ion-list.background{
+    background-color: var(--ion-color-background);
+  }
+
+.close{
+  --background: var(--ion-color-red);
+}

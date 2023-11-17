@@ -1,0 +1,66 @@
+ion-content{
+    --background: var(--ion-color-background);
+}
+
+ion-toolbar{
+    --background: var(--ion-color-background);
+    color: var(--ion-color-red);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+
+
+ion-item{
+    padding-right: 16px;
+    --background: var(--ion-color-background);
+    color: var(--ion-color-red);
+}
+
+ion-toolbar{
+    --background: var(--ion-color-background);
+}
+
+
+ion-item-options{
+    --sliding-background: var(--ion-color-background);
+}
+ 
+
+.delBtn{
+    // color: red;
+    --background: red;
+    width: 60px;
+    height: 35px;
+}
+
+.notesBtn{
+    width: 60px;
+    height: 35px;
+
+}
+
+ion-item.notes{
+    padding-bottom: 20px;
+}
+
+
+ion-list.background{
+    background-color: var(--ion-color-background);
+  }
+
+
+ion-footer{
+    padding:5%;
+    background-color: var(--ion-color-background);
+}
+
+.closeBtn{
+    --background:var(--ion-color-red);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.addBtn{
+    --background:var(--ion-color-red);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+

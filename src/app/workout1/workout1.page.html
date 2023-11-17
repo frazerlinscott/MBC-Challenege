@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>WORKOUT {{page}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div><ion-item><ion-input [(ngModel)]="Workout" placeholder="Add New Workout"></ion-input></ion-item></div>
+
+  <ion-item class="notes">
+    <ion-label position="floating">Notes</ion-label>
+    <ion-textarea [(ngModel)]="Notes" rows="6" cols="20" placeholder="Enter any notes here..."></ion-textarea>
+  </ion-item>
+
+  <div style="display: flex; justify-content: center;"><ion-button class="addBtn" (click)="addWorkout()"shape="round">ADD <ion-icon name="add-outline"></ion-icon></ion-button></div> 
+  <!-- //ng IF not working - only display add button when there is a workout typed in  -->
+  
+
+
+<!-- 
+  <ion-item-sliding *ngFor = "let workout of WorkoutDatabase?.reverse(); index as i"> -->
+
+  <ion-list class="background">
+    <ion-item-sliding *ngFor = "let workout of WorkoutDatabase; index as i">
+        <ion-item>
+    <!-- <p *ngIf="updatedWorkoutList.length == 0"> No workouts to display </p> -->
+      {{workout.name}}
+      <ion-icon slot="end" name="chevron-back-outline">></ion-icon></ion-item>
+
+      <ion-item-options>
+        <!-- <ion-button class="notesBtn" size="small" (click)="showNotes(i, workout.notes, workout.name)">Notes</ion-button> -->
+        <ion-button class="notesBtn" size="small" (click)="edit(i)">Edit</ion-button>
+        <ion-button  class="delBtn" size="small" (click)="deleteWorkout(i)">Delete</ion-button >
+      </ion-item-options>
+    </ion-item-sliding>
+
+  </ion-list> 
+
+</ion-content>
+
+  <ion-footer>
+    <div style="display: flex; justify-content: center;"><ion-button class="closeBtn" (click)="closeModal()"shape="round">CLOSE<ion-icon name="close-outline"></ion-icon></ion-button></div> 
+  </ion-footer>

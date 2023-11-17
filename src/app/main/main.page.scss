@@ -1,0 +1,155 @@
+#container {
+    text-align: center;
+    color: var(--ion-color-red); 
+    margin-top: -20px;
+    margin-bottom: -10px;
+}
+
+#bottomContainer {
+    text-align: center;
+    color: var(--ion-color-red); 
+    margin-bottom: -10px;
+}
+
+.editLink{
+  color: var(--ion-color-red);
+}
+
+.signOut{
+  padding-left:20px;
+}
+
+.about{
+  padding-right:20px;
+}
+
+.checklist-label{
+  // font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 16px;
+}
+
+
+div{
+    background: var(--ion-color-background);
+}
+
+ion-item{
+  padding-right: 16px;
+  --background: var(--ion-color-background);
+  color: var(--ion-color-red);
+  height: 40px;
+
+}
+
+ion-icon.icon{
+  padding-left: 10px;
+}
+
+.name{
+  color: white ;
+}
+
+.maps-btn{
+  --background: var(--ion-color-red);
+  width:80%;
+  margin-left:10%;
+  margin-right:10%;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow', sans-serif;
+}
+
+
+.item.item-input {
+  color: var(--ion-color-red);
+  --background: var(--ion-color-background);
+}
+
+ion-list{
+  --background: var(--ion-color-background);
+}
+
+ion-list.background{
+  background-color: var(--ion-color-background);
+}
+
+
+.item.item-select {
+  color: var(--ion-color-red);
+  --background: var(--ion-color-background);
+}
+
+ion-content{
+  --background: var(--ion-color-background);
+}
+
+ion-toolbar{
+  --background: var(--ion-color-background);
+  color: var(--ion-color-red);
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+.progress-btn{
+  --background: var(--ion-color-red);
+  width:50%;
+  margin-left:25%;
+  margin-right:25%;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+.buttonRow{
+  --background: var(--ion-color-red);
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 15px;
+}
+
+ion-footer{
+bottom:0;
+}
+
+h1{
+  font-size: 60px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+h2{
+  font-size: 15px;
+
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  padding-top: -50px;
+}
+
+h3{
+  font-size: 30px;
+  color: white;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow', sans-serif;
+  padding-top: -50px;
+}
+
+ion-checkbox{
+  --checkmark-color: white;
+  --background-checked: var(--ion-color-red);
+  --border-color: white;
+  --border-color-checked: white;
+}
+
+
+
+
+.ion-color-background {
+    --ion-color-base: var(--ion-color-background);
+    --ion-color-base-rgb: var(--ion-color-background-rgb);
+    --ion-color-contrast: var(--ion-color-background-contrast);
+    --ion-color-contrast-rgb: var(--ion-color-background-contrast-rgb);
+    --ion-color-shade: var(--ion-color-background-shade);
+    --ion-color-tint: var(--ion-color-background-tint);
+  }
+  
+.ion-color-red {
+    --ion-color-base: var(--ion-color-red);
+    --ion-color-base-rgb: var(--ion-color-red-rgb);
+    --ion-color-contrast: var(--ion-color-red-contrast);
+    --ion-color-contrast-rgb: var(--ion-color-red-contrast-rgb);
+    --ion-color-shade: var(--ion-color-red-shade);
+    --ion-color-tint: var(--ion-color-red-tint);
+  }

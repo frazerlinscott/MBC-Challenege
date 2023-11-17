@@ -1,0 +1,46 @@
+<ion-content>
+
+  <ion-card>
+    <ion-img [src]="currentPhoto.webviewPath" ></ion-img>
+    <ion-card-header>
+      <ion-card-title class="day-title">
+        DAY {{currentPhoto.day}}
+      </ion-card-title>
+      <!-- <ion-card-subtitle>
+        Your workouts for Day {{currentPhoto.day}}:
+      </ion-card-subtitle> -->
+    </ion-card-header>
+
+    <ion-card-content>
+      <div>
+        <ion-card-title class="workout">
+          WORKOUT 1:
+        </ion-card-title>
+          <ion-card-title class="workouts">
+            {{currentWorkout1}}
+          </ion-card-title>
+          <ion-card-subtitle class="notes" >
+            {{currentWorkout1Notes}}
+          </ion-card-subtitle>
+       </div>
+       <div>
+        <ion-card-title class="workout">
+          WORKOUT 2:
+        </ion-card-title>
+        <ion-card-title class="workouts">
+          {{currentWorkout2}}
+        </ion-card-title>
+        <ion-card-subtitle class="notes" >
+          {{currentWorkout2Notes}}
+        </ion-card-subtitle>
+     </div>
+    </ion-card-content>
+    <ion-img src="assets/imgs/checklist.png" ></ion-img>
+  </ion-card>
+
+  <ion-fab vertical="bottom" horizontal="center" slot="fixed">
+    <ion-fab-button class="close" (click)="closeModal()">
+      <ion-icon name="close"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
